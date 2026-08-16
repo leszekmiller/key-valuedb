@@ -11,3 +11,10 @@ uint64_t KVStore::htonll(uint64_t value) {
     }
 }
 
+uint64_t KVStore::ntohll(uint64_t value){
+    return htonll(value); // ta sama operacja
+}
+
+KVStore::KVStore(const std::string &path) : data_file_path_(path){
+    // na pozniej
+}
